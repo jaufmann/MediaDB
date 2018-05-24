@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <section class="header">
+      <div class="header__content">
+          <h2>  {{mangaDetailsResult?.title}}</h2><br>
+      </div>
+      <div class="headerBackground" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}"></div>
+  </section>
+  <section class="detailcontainer">
+      <div class="detailcontainer__leftcontent">
+          <div class="imagecontainer">
+              <img [src]="mangaDetailsResult?.image_url" style="width: 150px">
+          </div>
+          <div class="subinfos">
+              <ul>
+                  <li><b>Volumes:</b> {{mangaDetailsResult?.volumes}}</li>
+                  <li><b>Status:</b> {{mangaDetailsResult?.status}}</li>
+              </ul>
+          </div>
+      </div>
+      <div class="detailcontainer__rightcontent">
+          <div class="collectiontype">
+              <ul>
+                  <li>Gekauft</li>
+                  <li>Geschaut</li>
+              </ul>
+          </div>
+          <span class="description">
+              <h5>Descriptions</h5>
+              {{mangaDetailsResult?.synopsis}}
+          </span>
+      </div>
+  </section>
+  <div class="picturegallery">
+  </div>
+</div>
+

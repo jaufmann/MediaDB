@@ -1,0 +1,22 @@
+
+<div class="searchcontainer">
+  <input type="text" [(ngModel)]="movieName"><button (click)="searchMovie(movieName)">search</button>
+</div>
+
+<div class="wrapper">
+  <section class="searchresults">
+    <div class="searchresults__resultcontainer" *ngFor="let movieSearchresult of movieSearchResults">
+      <div class="imagecontainer">
+          <img src="https://image.tmdb.org/t/p/original/{{movieSearchresult.poster_path}}" style="width: 100px" class="searchimage">
+      </div>
+      <div class="content">
+          <span class="title"><h4>{{movieSearchresult.title}}</h4></span>
+          <span>{{movieSearchresult.overview | lengthtrimmer:movieSearchresult.overview}}</span>
+        <span></span>
+        <div class="moreinfo">
+          <a routerLink="/movie-details" [queryParams]="{id: movieSearchresult.id}">more info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

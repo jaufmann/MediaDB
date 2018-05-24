@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <section class="header">
+        <div class="header__content">
+            <h2> {{movieDetail?.original_title}}</h2><br>
+        </div>
+        <div class="headerBackground" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}"></div>
+    </section>
+    <section class="detailcontainer">
+        <div class="detailcontainer__leftcontent">
+            <div class="imagecontainer">
+                <img src="https://image.tmdb.org/t/p/original/{{movieDetail?.poster_path}}" style="width: 150px">
+            </div>
+            <div class="subinfos">
+                <ul>
+                    <li><b>Release:</b> {{movieDetail?.release_date}}</li>
+                    <li><b>Original Language:</b> {{movieDetail?.original_language}}</li>
+                    <li>
+                        <b>Genres:</b> 
+                        <span *ngFor="let genre of movieDetail?.genres ; let i = index">
+                            {{genre.name}}<span *ngIf="i !== (movieDetail?.genres.length-1)">,</span>
+                        </span>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <div class="detailcontainer__rightcontent">
+            <div class="collectiontype">
+                <ul>
+                    <li>Gekauft</li>
+                    <li>Geschaut</li>
+                </ul>
+            </div>
+            <span class="description">
+                <h5>Descriptions</h5>
+                {{movieDetail?.overview }}<br>
+            </span>
+        </div>
+    </section>
+    <div class="picturegallery">
+    </div>
+</div>

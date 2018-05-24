@@ -1,0 +1,66 @@
+<!-- <div class="wrapper">
+
+  <div class="header">
+     
+
+    <div style="width: 300px; margin: 0 auto">
+        <h2 style="color: white">{{gameDetailResult?.name}}</h2><br>
+    </div>
+   </div>
+  <div class="gameresults" style="    background-color: #efeeee;
+  border: 1px solid #d4d4d4; height: 350px">
+    <div class="imagecon">
+        <img [src]="gameDetailResult?.image?.thumb_url">
+    </div>
+    <div class="detailcontent">
+        <div class="navi">navi</div>
+        <h5>Descriptions</h5>
+        {{gameDetailResult?.deck}}<br>
+        {{gameDetailResult?.original_release_date}}
+    </div>
+   
+   
+  </div>
+</div>
+
+<div class="headerBackground" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">sdfsdfsdf</div>
+
+ -->
+
+
+
+<div class="wrapper">
+    <section class="header">
+        <div class="header__content">
+            <h2> {{gameDetailResult?.name}}</h2><br>
+        </div>
+        <div class="headerBackground" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}"></div>
+    </section>
+    <section class="detailcontainer">
+        <div class="detailcontainer__leftcontent">
+            <div class="imagecontainer">
+                <img [src]="gameDetailResult?.image?.thumb_url">
+            </div>
+            <div class="subinfos">
+                <ul>
+                    <li><b>Release:</b> {{gameDetailResult?.original_release_date}}</li>
+                </ul> 
+            </div>
+        </div>
+        <div class="detailcontainer__rightcontent">
+            <div class="collectiontype">
+                <ul>
+                    <li>Gekauft</li>
+                    <li>Geschaut</li>
+                </ul>
+            </div>
+            <span class="description">
+                <h5>Descriptions</h5>
+                {{gameDetailResult?.deck}}<br>
+            </span>
+        </div>
+    </section>
+    <div class="picturegallery">
+    </div>
+</div>
+

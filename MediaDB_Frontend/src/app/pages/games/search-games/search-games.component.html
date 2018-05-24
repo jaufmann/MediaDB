@@ -1,0 +1,21 @@
+<div class="searchcontainer">
+    <input type="text" [(ngModel)]="gameName"><button (click)="searchGame(gameName)">search</button>
+  </div>
+  
+  <div class="wrapper">
+    <section class="searchresults">
+      <div class="searchresults__resultcontainer" *ngFor="let searchGameResult of searchGameResults">
+        <div class="imagecontainer">
+            <img [src]="searchGameResult.image.icon_url">
+        </div>
+        <div class="content">
+            <span class="title"><h4>{{searchGameResult.name}}</h4></span>
+            <span>{{searchGameResult.deck}}</span>
+          <span></span>
+          <div class="moreinfo">
+              <a [routerLink]="['/game-details', searchGameResult.guid]">more info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

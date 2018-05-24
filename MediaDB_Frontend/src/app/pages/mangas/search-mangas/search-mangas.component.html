@@ -1,0 +1,21 @@
+<div class="searchcontainer">
+  <input type="text" #mangaName><button (click)="searchMangas(mangaName.value)">search</button>
+</div>
+
+<div class="wrapper">
+  <section class="searchresults">
+    <div class="searchresults__resultcontainer" *ngFor="let mangaResult of mangaResults">
+      <div class="imagecontainer">
+          <img [src]="mangaResult.image_url">
+      </div>
+      <div class="content">
+          <span class="title"><h4>{{mangaResult.title}}</h4></span>
+          <span>{{mangaResult.description}}</span>
+        <span></span>
+        <div class="moreinfo">
+            <a [routerLink]="['/manga-details', mangaResult.mal_id]">more info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

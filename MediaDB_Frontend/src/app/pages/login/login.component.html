@@ -1,0 +1,36 @@
+<div class="login">
+  <div class="login__container">
+    <span class="title"><h3>Login</h3></span>
+    <form [formGroup]="myForm" novalidate (ngSubmit)="login(myForm.value, myForm.valid)">
+        <div class="container">
+            <div class="row">
+              <div class="col-4">
+                  Username:
+              </div>
+              <div class="col-7">
+                  <input type="text" class="form-control" formControlName="name">
+              </div>
+              <div>
+                <img src="assets/correct.png" style="width: 30px;" *ngIf="myForm.controls.name.valid; else showWrongIcon">
+                <img src="assets/wrong.png" style="width: 20px;" *ngIf="!myForm.controls.name.valid; else showWrongIcon">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    Password
+                </div>
+                <div class="col-7">
+                    <input type="text" class="form-control" formControlName="password">
+                </div>
+                <div>
+                    <img src="assets/correct.png" style="width: 30px;" *ngIf="myForm.controls.password.valid; else showWrongIcon">
+                    <img src="assets/wrong.png" style="width: 20px;" *ngIf="!myForm.controls.password.valid; else showWrongIcon">
+                </div>
+            </div>
+            <div class="submitcontainer">
+                    <button type="submit" class="btn btn-primary">login</button>
+            </div>
+          </div>
+    </form>
+  </div>
+</div>

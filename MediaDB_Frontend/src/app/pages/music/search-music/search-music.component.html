@@ -1,0 +1,22 @@
+
+<div class="searchcontainer">
+  <input type="text" [(ngModel)]="musicName"><button (click)="searchMusic(musicName)">search</button>
+</div>
+
+<div class="wrapper">
+  <section class="gameresults">
+    <div class="resultContainer" *ngFor="let musicSearchResult of musicSearchResults">
+      <div class="imagecontainer">
+          <img [src]="musicSearchResult.image[1].image_path">
+      </div>
+      <div class="content">
+        <span class="title"><h4>{{musicSearchResult.name}}</h4></span>
+        <span>{{musicSearchResult.artist}}</span>
+        <div class="moreinfo">
+          more info
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+

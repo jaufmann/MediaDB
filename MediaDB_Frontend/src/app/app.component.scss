@@ -1,0 +1,21 @@
+nav {
+    background-color: black;
+    ul {
+        margin: 0;
+        display: table;
+
+        li {
+            display: table-cell;
+            padding-left: 10px;
+            padding-right: 10px;
+            a {
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+
+

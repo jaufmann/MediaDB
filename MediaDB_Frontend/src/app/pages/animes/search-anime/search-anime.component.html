@@ -1,0 +1,21 @@
+ <div class="searchcontainer">
+      <input type="text" [(ngModel)]="animeName"><button (click)="searchAnime(animeName)">search</button>
+    </div>
+    
+    <div class="wrapper">
+      <section class="searchresults">
+        <div class="searchresults__resultcontainer" *ngFor="let animeSearchResult of animeSearchResults">
+          <div class="imagecontainer">
+              <img [src]="animeSearchResult.image_url">
+          </div>
+          <div class="content">
+              <span class="title"><h4>{{animeSearchResult.title}}</h4></span>
+              <span>{{animeSearchResult.description}}</span>
+            <span></span>
+            <div class="moreinfo">
+                <a [routerLink]="['/anime-details', animeSearchResult.mal_id]">more info</a>
+            </div>
+          </div>
+        </div>
+      </section>
+</div>
