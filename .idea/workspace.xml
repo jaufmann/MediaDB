@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85f428ca-82e4-489a-a409-eeef73c13e29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MediaDB_Frontend/src/app/pages/games/detail-overview/detail-overview.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MediaDB_Frontend/src/app/pages/games/detail-overview/detail-overview.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="85f428ca-82e4-489a-a409-eeef73c13e29" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,12 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613061606711</updated>
-      <workItem from="1613061607866" duration="263000" />
+      <workItem from="1613061607866" duration="536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263000" />
+    <option name="totallyTimeSpent" value="536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="466" y="-1379" width="2109" height="1379" extended-state="0" />
