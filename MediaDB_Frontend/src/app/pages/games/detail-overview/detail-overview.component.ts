@@ -31,6 +31,7 @@ export class DetailOverviewComponent implements OnInit {
         this.gameDetailResult = response.results;
         this.backgroundImage = response.results.image.screen_large_url;
         console.log(this.gameDetailResult);
+        console.log('ich bin tssss');
       }
     );
   }
