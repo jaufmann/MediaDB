@@ -31,7 +31,11 @@ export class DetailOverviewComponent implements OnInit {
         this.gameDetailResult = response.results;
         this.backgroundImage = response.results.image.screen_large_url;
         console.log(this.gameDetailResult);
+<<<<<<< Updated upstream
         console.log('ich bin tssss');
+=======
+        console.log('ich habe viele änderungen gemacht bla bla')
+>>>>>>> Stashed changes
       }
     );
   }
