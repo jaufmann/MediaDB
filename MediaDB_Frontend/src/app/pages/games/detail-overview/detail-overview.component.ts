@@ -23,9 +23,9 @@ export class DetailOverviewComponent implements OnInit {
     this.id = this.activeroute.snapshot.params['id'];
     console.log('test nein ich bin waldemar Jaufmann llllllllllll aaaaa asdasdf wadfasdfsdfsdfsdf');
     console.log('ich bin waldemar');
+    console.log('test nein ich bin waldemar Jaufmann llllllllllll aaaaa asdasdf wadfasdfsdfsdfsdf');
     console.log('test nein ich bin waldemar kaufmann der erste und der zweite und der dritte und vierte und fünfte');
     this.getGameDetails(this.id);
-    console.log('merh')
   }
 
   getGameDetails(guid: string) {
