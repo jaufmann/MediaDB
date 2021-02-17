@@ -26,6 +26,7 @@ export class DetailOverviewComponent implements OnInit {
       console.log('ich habe nur ein log');
       console.log('ich habe nur ein log');
       console.log('ich habe nur ein log');
+      console.log('Sdfsdfsdfsdf');
     this.getGameDetails(this.id);
   }
 
