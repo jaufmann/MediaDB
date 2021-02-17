@@ -22,6 +22,10 @@ export class DetailOverviewComponent implements OnInit {
   ngOnInit() {
     this.id = this.activeroute.snapshot.params['id'];
     console.log('ich habe nur ein log');
+      console.log('ich habe nur ein log');
+      console.log('ich habe nur ein log');
+      console.log('ich habe nur ein log');
+      console.log('ich habe nur ein log');
     this.getGameDetails(this.id);
   }
 
