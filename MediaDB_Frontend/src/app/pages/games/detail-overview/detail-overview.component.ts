@@ -22,6 +22,7 @@ export class DetailOverviewComponent implements OnInit {
   ngOnInit() {
     this.id = this.activeroute.snapshot.params['id'];
     this.getGameDetails(this.id);
+    console.log('merh')
   }
 
   getGameDetails(guid: string) {
