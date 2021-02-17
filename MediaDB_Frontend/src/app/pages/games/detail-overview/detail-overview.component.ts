@@ -28,7 +28,7 @@ export class DetailOverviewComponent implements OnInit {
     console.log('test nein ich bin waldemar');
     console.log('test nein ich bin waldemar');
     console.log('ich bin waldemar');
-    console.log('test nein ich bin waldemar kaufmann');
+    console.log('test nein ich bin waldemar kaufmann der erste');
     this.getGameDetails(this.id);
   }
 
